@@ -12,16 +12,16 @@
   <% end %>
 
   <div>
-    <%= form.label :name, style: "display: block" %>
+    <%= form.label :nome, style: "display: block" %>
     <%= form.text_field :name %>
   </div>
 
   <div>
-    <%= form.label :price, style: "display: block" %>
+    <%= form.label :preço, style: "display: block" %>
     <%= form.text_field :price %>
   </div>
-
+<br>
   <div>
-    <%= form.submit %>
+    <%= form.submit product.new_record? ? "Criar Produto" : "Atualizar Produto", class: "botao-form" %>
   </div>
 <% end %>
